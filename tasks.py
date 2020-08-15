@@ -21,11 +21,6 @@ CONFIG = {
     'settings_publish': 'publishconf.py',
     # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     'deploy_path': SETTINGS['OUTPUT_PATH'],
-    # Remote server configuration
-    'ssh_user': 'tung491',
-    'ssh_host': '159.65.1.95',
-    'ssh_port': '22',
-    'ssh_path': '/var/www',
     # Github Pages configuration
     'github_pages_branch': 'master',
     'commit_message': "'Publish site on {}'".format(datetime.date.today().isoformat()),
