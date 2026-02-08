@@ -259,6 +259,12 @@ hr {
     margin-left: 0.3rem;
 }
 
+.badge.award {
+    background: #fffff0;
+    color: #975a16;
+    border: 1px solid #f6e05e;
+}
+
 /* ===== Achievements ===== */
 .achievement-list {
     list-style: none;
