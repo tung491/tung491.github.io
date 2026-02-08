@@ -1,0 +1,355 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2d3748;
+    background-color: #fafafa;
+}
+
+a {
+    color: #2b6cb0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #1a4971;
+    text-decoration: underline;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.nav-logo:hover {
+    text-decoration: none;
+    color: #2b6cb0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4a5568;
+    padding: 0.3rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #2b6cb0;
+    text-decoration: none;
+    border-bottom-color: #2b6cb0;
+}
+
+/* ===== Layout ===== */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 2rem 0;
+}
+
+/* ===== Profile Section ===== */
+.profile-section {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid #e2e8f0;
+}
+
+.profile-info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 0.2rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: 0.6rem;
+}
+
+.affiliation {
+    font-size: 0.95rem;
+    color: #718096;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.intro {
+    font-size: 0.98rem;
+    color: #4a5568;
+    line-height: 1.8;
+}
+
+/* ===== Sections ===== */
+.section {
+    margin-bottom: 0.5rem;
+}
+
+.section h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.section-note {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Contact ===== */
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* ===== Research Interests ===== */
+.research-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.research-list li {
+    background: #ebf4ff;
+    color: #2b6cb0;
+    padding: 0.35rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ===== Education & Experience Entries ===== */
+.entry {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #e2e8f0;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.entry-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #1a202c;
+}
+
+.entry-date {
+    font-size: 0.85rem;
+    color: #718096;
+    white-space: nowrap;
+}
+
+.entry-details {
+    font-size: 0.93rem;
+    color: #4a5568;
+    margin-top: 0.3rem;
+    line-height: 1.7;
+}
+
+/* ===== Publications ===== */
+.pub-list {
+    padding-left: 1.5rem;
+}
+
+.pub-list li {
+    margin-bottom: 1rem;
+    font-size: 0.93rem;
+    line-height: 1.7;
+    color: #4a5568;
+}
+
+.pub-list li strong {
+    color: #1a202c;
+}
+
+.badge {
+    display: inline-block;
+    background: #f0fff4;
+    color: #276749;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 0.3rem;
+}
+
+/* ===== Achievements ===== */
+.achievement-list {
+    list-style: none;
+}
+
+.achievement-list li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.achievement-list li::before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #d69e2e;
+}
+
+/* ===== Updates ===== */
+.update-entry {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #e2e8f0;
+}
+
+.update-date {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #2b6cb0;
+    margin-bottom: 0.3rem;
+}
+
+.update-content {
+    font-size: 0.93rem;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.update-content ul {
+    margin-top: 0.3rem;
+    padding-left: 1.2rem;
+}
+
+.update-content li {
+    margin-bottom: 0.3rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    border-top: 1px solid #e2e8f0;
+    margin-top: 2rem;
+    background: #fff;
+}
+
+footer .container {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.85rem;
+    color: #a0aec0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-info h1 {
+        font-size: 1.6rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .entry-header {
+        flex-direction: column;
+    }
+
+    .research-list {
+        justify-content: center;
+    }
+}
